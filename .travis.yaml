@@ -1,11 +1,9 @@
 language: python
 python:
-
-  - "3.7"
-
-# command to install dependencies
+  - "3.6"
 install:
+  -sudp apt-get update
+before_script:
   - pip install -r requirements.txt
-# command to run tests
 script:
   - pytest
