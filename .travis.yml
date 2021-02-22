@@ -6,6 +6,5 @@ install:
 before_script:
   - pip install -r requirements.txt
 script:
-  - pytest
-services:
-  - xvfb
+  - python manage.py test
+
